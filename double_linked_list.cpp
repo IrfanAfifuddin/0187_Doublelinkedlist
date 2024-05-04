@@ -52,7 +52,7 @@ void addNode() {
         }
 
         if (previous != NULL) {
-            previous->next = newNode // step 7: Make the next field of the previous 
+            previous->next = newNode; // step 7: Make the next field of the previous 
         }
 
         else {
