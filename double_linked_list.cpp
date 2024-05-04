@@ -147,6 +147,26 @@ void traverse()
     }
 }
 
+void revtraverse()
+{
+    if (listempety())
+        cout << "\nList is empty" << endl;
+    else
+    {
+        cout << "\nRecord is descending order of roll number are:  " << endl;
+        Node* currentNode = START;
+        while (currentNode->next != NULL)
+            currentNode = currentNode->next;
+
+        while (currentNode != NULL)
+        {
+            cout << currentNode->noMhs << " " << currentNode->name << endl;
+            currentNode = currentNode->prev;
+        }
+    }
+}
+
+
 int main()
 {
 
