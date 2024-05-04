@@ -47,6 +47,10 @@ void addNode() {
         newNode->next = current; // step 4: make the next field of the new node point
         newNode->prev = previous; // step 5: make the previous field of the new node
 
+        if (current != NULL) {
+            current->next = newNode; // step 6: make the previous of the current
+        }
+
 int main()
 {
 
