@@ -51,6 +51,10 @@ void addNode() {
             current->next = newNode; // step 6: make the previous of the current
         }
 
+        if (previous != NULL) {
+            previous->next = newNode; // step 7: Make the next field of the previous 
+        }
+
 int main()
 {
 
