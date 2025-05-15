@@ -135,5 +135,8 @@ class DoubleLinkedList
             cout << "\nList is empty" << endl;
             return;
         }
+
+        // Step 1: Mark first node as currentNode
+        Node *currentNode = START;
     }
 };
