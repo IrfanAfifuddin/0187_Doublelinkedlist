@@ -1,9 +1,23 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class Node {
+class Node 
+{
 public:
-    int rollNo;
-    Node* next;
-    Node* prev;
+    int noMhs;
+    Node *next;
+    Node *prev;
+};
+
+class DoubleLinkedList 
+{
+    private:
+    Node *START;
+
+    public:
+    DoubleLinkedList() 
+    {
+        START = NULL;
+    }   
 };
